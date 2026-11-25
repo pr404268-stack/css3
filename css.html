@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+
+<style>
+    /*ellipsis  */
+    .e{
+height: 40px;
+width: 60px;
+border: 3px solid pink;
+
+}
+
+.e{
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+    /* scale */
+    .c{
+margin: 100px;
+width: 250px;
+height: 150px;
+background-color: mediumpurple;
+border: 3px solid burlywood;
+transform: scale(1,2);
+}
+    /*translate property  */
+     
+  h5{
+  transition:transform 2s;
+  background-color: yellow;
+  height: 100px;
+  width: 300px;
+  }
+  h5:hover{
+  transform: translate(100px,150px);
+  }
+  /* roted */
+  h3{
+    transition:transform 1s;
+    background-color: aqua;
+    height:50px;
+    width:50px;
+  }
+  h3{
+    transform:translate(50px,100px) ;
+  }
+    /*  property skew */
+      .g {
+    width: 200px;
+    height: 150px;
+    background-color: darkkhaki;
+    border: 1px solid brown;
+     transform: skew(25deg,14deg);
+  }
+    /* keyframes */
+    body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    height: 3vh;
+
+}
+
+.b{
+    width: 100px;
+    height: 100px;
+    background-color: #ff6;
+    color: #f0f;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 25px;
+    text-align: left;
+    animation: rotateScale 3s infinite;
+}
+
+@keyframes rotateScale {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(100deg) scale(2.5);
+    }
+    100% {
+        transform: rotate(290deg) scale(1);
+    }
+}
+    /*image animation absolute*/
+.real-box{
+height: 250px;
+width: 150px;
+background-color: olive;
+position: relative;
+ 
+}
+
+.overlay{
+position: absolute;
+bottom: 0;
+top: 0;
+right: 0;
+background-color: #8CBA;
+overflow: hidden;
+width:0 ;
+height: 600%;
+transition: 3s ease;
+
+}
+
+p{
+padding: 5px;
+}
+
+.real-box:hover .overlay{
+width: 60%;
+}
+</style>
+<body>
+    <!-- image animation absolute -->
+<div class="real-box">
+
+<div class="overlay">
+<p>CSS (Cascading Style Sheets) is a stylesheet language used to control the presentation of HTML or XML documents, including layout, colors, fonts, spacing, and responsive design. It was first released in 1996 and is maintained by the W3C, with CSS3 developed as modular specifications.
+</p>
+</div>
+
+</div>
+<!-- keyframes -->
+<div class="b">Selectors target HTML elements (e.g., tag, class, ID)</div>
+<!-- skew -->
+<div class="g">ramratan </div>
+<!-- translate -->
+ <h5>priya</h5>
+ <!-- roted -->
+  <h3>vishwakarma</h3>
+  <!-- scale -->
+   <div class="c">my name is priya </div>
+   <!-- ellipsis -->
+<div class="e">i am student of bca</div>
+
+</body>
+</html>
